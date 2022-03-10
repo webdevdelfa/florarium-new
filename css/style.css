@@ -443,6 +443,7 @@ a {
 .works__size-item {
     margin-right: 25px;
     cursor: pointer;
+    position: relative;
 }
 
 .works__size-btn {
@@ -463,7 +464,7 @@ a {
     cursor: pointer;
 }
 
-.works__size-fake.active {
+.works__size-btn:checked+.works__size-fake {
     background: #FFBF42;
 }
 
