@@ -173,7 +173,7 @@ a {
 }
 
 .header__burger {
-    display: block;
+    display: none;
     position: relative;
     width: 55px;
     height: 33px;
@@ -221,8 +221,53 @@ a {
     -o-border-radius: 50px;
 }
 
-.header__burger {
-    display: none;
+@media (max-width: 768px) {
+    .header__burger {
+        display: block;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__container {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        order: -2;
+    }
+
+    .basket {
+        width: 130px;
+        font-size: 12px;
+    }
+
+    .basket__circle {
+        width: 43px;
+        height: 43px;
+    }
+
+    .header__burger {
+        order: -1;
+        width: 35px;
+        height: 24px;
+        margin-left: 10px;
+        margin-right: 16px;
+    }
+
+    .header__burger::before,
+    .header__burger::after {
+        width: 32px;
+        height: 24px;
+        left: 0;
+        height: 4px;
+    }
+
+    .header__burger span {
+        width: 35px;
+        height: 4px;
+        top: 10px;
+    }
+
 }
 
 .hero {
